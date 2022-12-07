@@ -108,9 +108,18 @@ int ikincibuyukeleman(int dizi[])
 }
 void ortalamadanbuyukdegerler(int dizi[])
 {
+    int toplam;
+    float ortalama;
+
     for (int i = 0; i < 5; i++)
     {
-        if (dizi[i] > ortalamahesapla(dizi))
+        toplam += dizi[i];
+    }
+    ortalama = toplam /5;
+    
+    for (int i = 0; i < 5; i++)
+    {
+        if (dizi[i] > ortalama)
         {
             printf("%d\n", dizi[i]);
         }
@@ -118,9 +127,18 @@ void ortalamadanbuyukdegerler(int dizi[])
 }
 void ortalamadankucukdegerler(int dizi[])
 {
+    int toplam;
+    float ortalama;
+
     for (int i = 0; i < 5; i++)
     {
-        if (dizi[i] < ortalamahesapla(dizi))
+        toplam += dizi[i];
+    }
+    ortalama = toplam /5;
+    
+    for (int i = 0; i < 5; i++)
+    {
+        if (dizi[i] < ortalama)
         {
             printf("%d\n", dizi[i]);
         }
